@@ -1,0 +1,13 @@
+source 'http://rubygems.org'
+gem 'rails', '3.0.7'
+gem 'pg'
+gem "nifty-generators", :group => :development
+gem "rspec-rails", ">= 2.0.0", :group => :test
+gem "database_cleaner", :group => :test
+gem "factory_girl_rails", :group => :test
+gem "haml"
+gem "haml-rails"
+gem "jquery-rails"
+gem "simple_form"
+gem "ahn-rails"
+gem "adhearsion", ">= 1.0.1"

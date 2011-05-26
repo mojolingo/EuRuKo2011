@@ -1,0 +1,8 @@
+enabled_recipes:
+  - rspec
+  - factory_girl
+  - haml
+  - jquery
+  - simple_form
+  - nifty_layout
+  - adhearsion
