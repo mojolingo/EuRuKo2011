@@ -1,0 +1,3 @@
+source "http://rubygems.org"
+
+gem "adhearsion", ">= 1.0.1"
