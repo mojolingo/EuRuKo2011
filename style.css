@@ -4,4 +4,8 @@
   font-size: 1.5em;
 }
 
-
+#preso, .slide
+{
+  width: 1920px;
+  height: 1200px;
+}
