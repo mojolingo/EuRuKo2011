@@ -26,4 +26,9 @@
 * Abstracts away the complexity<br>of the telephony world
 
 !SLIDE center
-<img src="feature_map.png"/>
+![feature_map.png](feature_map.png)
+
+!SLIDE center
+# Embedding Adhearsion in Rails #
+![ahn_dir_structure.png](ahn_dir_structure.png)
+![rails_dir_structure.png](rails_dir_structure.png)
