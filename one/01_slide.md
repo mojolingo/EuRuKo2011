@@ -32,3 +32,20 @@
 # Embedding Adhearsion in Rails #
 ![ahn_dir_structure.png](ahn_dir_structure.png)
 ![rails_dir_structure.png](rails_dir_structure.png)
+
+!SLIDE bullets incremental
+# Simple example application #
+
+* Everyone loves a spontaneous conference call
+* Getting people in is tricky
+* Not everyone likes the phone ringing
+* Not everyone is available
+
+!SLIDE bullets incremental
+# A solution, live #
+
+* Simple rails app for managing contacts
+* Select contacts to call
+* System calls you and throws you into a conference
+* Also ask contacts via Jabber if they are available
+* Will read apologies via Jabber into the conference
