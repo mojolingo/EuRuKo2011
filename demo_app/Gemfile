@@ -20,8 +20,3 @@ group :adhearsion do
   gem 'adhearsion', :git => 'git://github.com/adhearsion/adhearsion.git', :branch => 'develop'
   gem 'blather'
 end
-
-group :components do
-  gem 'toadhopper', :git => 'git://github.com/mojolingo/toadhopper.git'
-  gem 'ahn_hoptoad', :git => 'git://github.com/mojolingo/ahn_hoptoad.git', :branch => :develop
-end

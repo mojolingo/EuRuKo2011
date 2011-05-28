@@ -12,21 +12,6 @@ GIT
       rake
       rubigen (>= 1.5.6)
 
-GIT
-  remote: git://github.com/mojolingo/ahn_hoptoad.git
-  revision: 98e6c283edcf109d9b2391b34b4bde15bfc90f72
-  branch: develop
-  specs:
-    ahn_hoptoad (1.0.0)
-      adhearsion (>= 1.1.0)
-      toadhopper (>= 1.2.0)
-
-GIT
-  remote: git://github.com/mojolingo/toadhopper.git
-  revision: a0a1449b81e34f0cb0f449d280edacffba9d9897
-  specs:
-    toadhopper (1.2)
-
 GEM
   remote: http://rubygems.org/
   specs:
@@ -152,7 +137,6 @@ PLATFORMS
 DEPENDENCIES
   adhearsion!
   ahn-rails
-  ahn_hoptoad!
   blather
   database_cleaner
   factory_girl_rails
@@ -163,4 +147,3 @@ DEPENDENCIES
   pg
   rails (= 3.0.7)
   rspec-rails (>= 2.0.0)
-  toadhopper!
