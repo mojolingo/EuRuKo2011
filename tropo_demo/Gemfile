@@ -1,5 +1,0 @@
-source "http://rubygems.org"
-
-gem "adhearsion", ">= 1.0.3"
-gem "blather"
-gem "tropo-rest"

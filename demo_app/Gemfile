@@ -1,0 +1,27 @@
+source 'http://rubygems.org'
+
+gem 'rails', '3.0.7'
+gem 'pg'
+
+gem 'haml'
+gem 'haml-rails'
+gem 'jquery-rails'
+gem 'ahn-rails'
+
+gem 'nifty-generators', :group => :development
+
+group :development, :test do
+  gem 'rspec-rails', '>= 2.0.0'
+  gem 'database_cleaner'
+  gem 'factory_girl_rails'
+end
+
+group :adhearsion do
+  gem 'adhearsion', :git => 'git://github.com/adhearsion/adhearsion.git', :branch => 'develop'
+  gem 'blather'
+end
+
+group :components do
+  gem 'toadhopper', :git => 'git://github.com/mojolingo/toadhopper.git'
+  gem 'ahn_hoptoad', :git => 'git://github.com/mojolingo/ahn_hoptoad.git', :branch => :develop
+end
