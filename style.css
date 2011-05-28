@@ -14,3 +14,14 @@
   height: 1200px;
   width: 1920px;
 }
+
+div[ref="one/01_slide/4"] p
+{
+  width: 614px;
+  margin: auto;
+}
+
+div[ref="one/01_slide/4"] img
+{
+  float: left;
+}
