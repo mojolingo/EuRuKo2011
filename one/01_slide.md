@@ -46,6 +46,5 @@
 
 * Simple rails app for managing contacts
 * Select contacts to call
-* System calls you and throws you into a conference
-* Also ask contacts via Jabber if they are available
+* System ask contacts via Jabber if they are available
 * Will read apologies via Jabber into the conference
