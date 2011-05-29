@@ -1,14 +1,13 @@
 body, li
 {
-  font-size: 1.2em
 }
 
 #logo
 {
   position: absolute;
   width: 640px;
-  top: 350px;
-  left: 640px;
+  top: 70px;
+  left: 170px;
 }
 
 #repo-url
@@ -19,9 +18,10 @@ body, li
 
 .author
 {
+  padding-top: 50px;
   margin: 50px;
-  width: 800px;
-  font-size: 2.5em;
+  width: 400px;
+  font-size: 2.0em;
 }
 
 #langfeld
@@ -31,13 +31,12 @@ body, li
 
 #contact
 {
-  font-size: 2.5em;
+  font-size: 2.0em;
 }
 
 #preso, .slide
 {
-  width: 1920px;
-  height: 1200px;
+  font-size: 0.9em;
 }
 
 /*
@@ -52,18 +51,9 @@ body, li
 */
 
 .slide .center {
-  height: 1200px;
-  width: 1920px;
 }
 
-div[ref="one/01_slide/7"] p
+.sh_sourceCode
 {
-  width: 1020px;
-  margin: auto;
-}
-
-div[ref="one/01_slide/7"] img
-{
-  float: left;
-  padding: 10px;
+  font-size: 2.5em;
 }
