@@ -11,6 +11,12 @@ body, li
   left: 640px;
 }
 
+#repo-url
+{
+  text-align: center;
+  font-size: 3em;
+}
+
 .author
 {
   margin: 50px;

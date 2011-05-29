@@ -1,6 +1,7 @@
 !SLIDE
 <div id="logo"><a href="http://adhearsion.com/"><img src="adhearsion_logo.png"/></a></div>
 # Getting Hands On With Adhearsion #
+<p id="repo-url">https://github.com/mojolingo/EuRuKo2011</p>
 <div class="author" style="float: left;">
   <ul>
     <li>Ben Klang</li>
@@ -40,18 +41,18 @@
     @@@ Ruby
     collection {
       play "welcome"
-    
+
       pin = input 6, :play => "please-enter-your-pin"
-    
+
       this_customer = Customer.find_by_pin(pin)
       if this_customer
         if this_customer.delinquent?
           play "sorry", "you-have-outstanding-debts"
-    
+
           menu "would-you-like-to-make-a-payment", :tries => 3 do |option|
             option.add_credit 1
             option.delinquent 2
-    
+
             option.on_failure do
               play "you-did-not-make-a-valid-selection"
               +customer_service
