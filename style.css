@@ -1,7 +1,26 @@
+body, li
+{
+  font-size: 1.2em
+}
+
+#logo
+{
+  position: absolute;
+  width: 640px;
+  top: 350px;
+  left: 640px;
+}
+
 .author
 {
   margin: 50px;
-  font-size: 1.5em;
+  width: 800px;
+  font-size: 2.5em;
+}
+
+#langfeld
+{
+  text-align: right;
 }
 
 #preso, .slide
@@ -10,18 +29,28 @@
   height: 1200px;
 }
 
+.slide {
+  background-image: url('/image/one/adhearsion_logo.png')
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 50;
+  left: 200px;
+  top: 200px;
+}
+
 .slide .center {
   height: 1200px;
   width: 1920px;
 }
 
-div[ref="one/01_slide/4"] p
+div[ref="one/01_slide/7"] p
 {
-  width: 614px;
+  width: 1020px;
   margin: auto;
 }
 
-div[ref="one/01_slide/4"] img
+div[ref="one/01_slide/7"] img
 {
   float: left;
+  padding: 10px;
 }
