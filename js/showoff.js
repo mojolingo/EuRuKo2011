@@ -190,6 +190,8 @@ function showSlide(back_step) {
 	if (fullPage) {
 		$('#preso').css({'width' : '100%', 'overflow' : 'visible'});
 		currentSlide.css({'width' : '100%', 'text-align' : 'center', 'overflow' : 'visible'});
+	} else {
+		$('#preso').css({'width' : '1020px', 'overflow' : 'hidden'});
 	}
 
 	percent = getSlidePercent()
@@ -221,9 +223,7 @@ function getSlideProgress()
 
 function getCurrentNotes()
 {
-  var notes = currentSlide.find("p.notes").text()
-  $('#notesInfo').text(notes)
-	return notes 
+	return currentSlide.find("p.notes").text()
 }
 
 function getSlidePercent()
@@ -290,18 +290,6 @@ function doDebugStuff()
 		debug('debug mode on')
 	} else {
 		$('#debugInfo').hide()
-	}
-}
-
-var notesMode = false
-function toggleNotes()
-{
-  notesMode = !notesMode
-	if (notesMode) {
-		$('#notesInfo').show()
-		debug('notes mode on')
-	} else {
-		$('#notesInfo').hide()
 	}
 }
 
@@ -380,10 +368,6 @@ function keyDown(event)
 	else if (key == 66 || key == 70) // f for footer (also "b" which is what kensington remote "stop" button sends
 	{
 		toggleFooter()
-	}
-	else if (key == 78) // 'n' for notes
-	{
-		toggleNotes()
 	}
 	else if (key == 27) // esc
 	{
