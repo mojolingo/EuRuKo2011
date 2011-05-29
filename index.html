@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title></title>
+  <title>Getting Hands On With Adhearsion</title>
 
   <link rel="stylesheet" href="./css/reset.css" type="text/css"/>
   <link rel="stylesheet" href="./css/showoff.css" type="text/css"/>
@@ -28,12 +28,14 @@
   <link type="text/css" href="./css/sh_style.css" rel="stylesheet" >
 
   
+    <link rel="stylesheet" href="file/style.css" type="text/css"/>
+  
 
   
 
   <script type="text/javascript">
   $(function(){
-    setupPreso(true, './');
+    setupPreso(false, './');
   });
   </script>
 </head>
@@ -69,8 +71,115 @@
   <span id="notesInfo"></span>
 </div>
 
-<div id="slides" class="offscreen" >
+<div id="slides" class="offscreen" style="display:none;">
+<div class="slide" data-transition="none"><div class="content" ref="one/01_slide/1">
+<div id="logo"><a href="http://adhearsion.com/"><img src="file:///Users/ben/code/EuRuKo2011/one/adhearsion_logo.png" width="640" height="150"/></a></div>
+
+
+<h1>Getting Hands On With Adhearsion</h1>
+
+<p id="repo-url">https://github.com/mojolingo/EuRuKo2011</p>
+
+
+<div class="author" style="float: left;">
+  <ul>
+    <li>Ben Klang</li>
+    <li>Founder, Mojo Lingo</li>
+    <li>bklang@mojolingo.com</li>
+    <li>Twitter/Github: @bklang</li>
+  </ul>
 </div>
+
+
+<div id="langfeld" class="author" style="float: right;">
+  <ul>
+    <li>Ben Langfeld</li>
+    <li>Adhearsion Core Team</li>
+    <li>ben@langfeld.me</li>
+    <li>Twitter/Github: @benlangfeld</li>
+  </ul>
+</div>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="one/01_slide/2">
+<h1>What is Adhearsion?</h1>
+
+<ul>
+<li>Ruby-based framework for telephony applications</li>
+<li>Inspired by Rails, but not dependent</li>
+<li>Adhearsion Democratizes Telephony Development</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets center" ref="one/01_slide/3">
+<h1>Design goals</h1>
+
+<ul>
+<li>Intuitive Domain Specific Language</li>
+<li>Bring Modern Development Practices to Telephony</li>
+<li>Maximize code re-use (even between Cloud and Premise)</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="one/01_slide/4">
+<p><img src="file:///Users/ben/code/EuRuKo2011/one/feature_map.png" width="750" height="711" alt="feature_map.png"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/5">
+<pre class="sh_Ruby"><code>collection {
+  play "welcome"
+
+  pin = input 6, :play =&gt; "please-enter-your-pin"
+
+  this_customer = Customer.find_by_pin(pin)
+  if this_customer
+    if this_customer.delinquent?
+      play "sorry", "you-have-outstanding-debts"
+
+      menu "would-you-like-to-make-a-payment", :tries =&gt; 3 do |option|
+        option.add_credit 1
+        option.delinquent 2
+
+        option.on_failure do
+          play "you-did-not-make-a-valid-selection"
+          +customer_service
+        end
+      end
+    else
+      +account_admin
+    end
+  else
+    play "we-could-not-find-that-customer-record"
+    hangup
+  end
+}</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="one/01_slide/6">
+<h1>Simple example application</h1>
+
+<ul>
+<li>Everyone loves a spontaneous conference call</li>
+<li>Getting people in is tricky</li>
+<li>Not everyone likes the phone ringing</li>
+<li>Not everyone is available</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="one/01_slide/7">
+<h1>A solution, live</h1>
+
+<ul>
+<li>Simple rails app for managing contacts</li>
+<li>Select contacts to call</li>
+<li>System ask contacts via Jabber if they are available</li>
+<li>Will read apologies via Jabber into the conference</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="one/01_slide/8">
+<h1>Live Demo</h1></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="one/01_slide/9">
+<h1>Questions</h1>
+
+<ul id="contact">
+<li>Website http://adhearsion.com</li>
+<li>Twitter @adhearsion</li>
+<li>Github http://github.com/adhearsion/adhearsion</li>
+</ul>
+</div>
+</div></div>
 
 </body>
 </html>
