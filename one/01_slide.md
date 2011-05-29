@@ -66,11 +66,6 @@
       end
     }
 
-!SLIDE center
-# Embedding Adhearsion in Rails #
-![ahn_dir_structure.png](ahn_dir_structure.png)
-![rails_dir_structure.png](rails_dir_structure.png)
-
 !SLIDE bullets incremental
 # Simple example application #
 
@@ -88,7 +83,8 @@
 * Will read apologies via Jabber into the conference
 !SLIDE center
 # Questions #
-
-* Website http://adhearsion.com
-* Twitter @adhearsion
-* Github http://github.com/adhearsion/adhearsion
+<ul id="contact">
+<li>Website http://adhearsion.com</li>
+<li>Twitter @adhearsion</li>
+<li>Github http://github.com/adhearsion/adhearsion</li>
+</ul>
