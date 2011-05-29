@@ -10,7 +10,6 @@ module RailsIntegrationDemo
   class Application < Rails::Application
     config.generators do |generator|
       generator.template_engine :haml
-      generator.fixture_replacement :factory_girl, :dir => 'test/factories'
       generator.test_framework :rspec, :views => false
       generator.orm :active_record
     end

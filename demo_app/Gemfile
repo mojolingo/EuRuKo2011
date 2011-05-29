@@ -12,13 +12,12 @@ gem 'simple_form'
 
 gem 'nifty-generators', :group => :development
 
+gem 'adhearsion', :git => 'git://github.com/adhearsion/adhearsion.git', :branch => :develop, :group => [:development, :production, :adhearsion]
+gem 'blather', :git => 'git://github.com/sprsquish/blather.git', :branch => :without_active_support, :group => :adhearsion
+gem 'tropo-rest', :git => 'git://github.com/benlangfeld/tropo-rest.git', :branch => :temp_get_patch, :group => :adhearsion
+
 group :development, :test do
   gem 'rspec-rails', '>= 2.0.0'
   gem 'database_cleaner'
   gem 'factory_girl_rails'
-end
-
-group :adhearsion do
-  gem 'adhearsion', :git => 'git://github.com/adhearsion/adhearsion.git', :branch => 'develop'
-  gem 'blather'
 end

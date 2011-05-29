@@ -17,14 +17,13 @@ Adhearsion::Configuration.configure do |config|
   config.end_call_on_error = values['end_call_on_error'] || true
 
   config.enable_asterisk :argument_delimiter => values['argument_delimiter'] || '|'
-  # config.asterisk.enable_ami values['ami']
+  config.asterisk.enable_ami values['ami']
 
   config.enable_drb if values['drb']
 
   config.enable_rails :path => '.', :env => values['rails_env'].to_sym
 
   config.enable_xmpp :jid => 'adhearsion@localhost', :password => 'password', :server => 'localhost', :port => 5223
-
 end
 
 Adhearsion::Initializer.start_from_init_file(__FILE__, File.dirname(__FILE__) + "/..")

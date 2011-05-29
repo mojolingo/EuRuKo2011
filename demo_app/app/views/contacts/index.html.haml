@@ -2,6 +2,7 @@
 
 %table
   %tr
+    %th Call?
     %th Name
     %th Number
     %th Jid
@@ -9,14 +10,19 @@
     %th
     %th
 
-  - @contacts.each do |contact|
-    %tr
-      %td= contact.name
-      %td= contact.number
-      %td= contact.jid
-      %td= link_to 'Show', contact
-      %td= link_to 'Edit', edit_contact_path(contact)
-      %td= link_to 'Destroy', contact, :confirm => 'Are you sure?', :method => :delete
+  = form_for(:call, url: calls_path) do |f|
+    - @contacts.each do |contact|
+      %tr
+        %td
+          %input{name: "call[participants][]", type: "checkbox", value: contact.id}
+        %td= contact.name
+        %td= contact.number
+        %td= contact.jid
+        %td= link_to 'Show', contact
+        %td= link_to 'Edit', edit_contact_path(contact)
+        %td= link_to 'Destroy', contact, :confirm => 'Are you sure?', :method => :delete
+
+    = f.submit "Invite to call"
 
 %br
 

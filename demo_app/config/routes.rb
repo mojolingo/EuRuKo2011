@@ -1,5 +1,6 @@
 RailsIntegrationDemo::Application.routes.draw do
   resources :contacts
+  resources :calls, only: :create
   root to: "contacts#index"
 
   # The priority is based upon order of creation:
