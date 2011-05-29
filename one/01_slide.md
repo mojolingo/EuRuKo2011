@@ -81,6 +81,10 @@
 * Select contacts to call
 * System ask contacts via Jabber if they are available
 * Will read apologies via Jabber into the conference
+
+!SLIDE center
+# Live Demo #
+
 !SLIDE center
 # Questions #
 <ul id="contact">
